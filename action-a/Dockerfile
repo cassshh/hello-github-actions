@@ -1,13 +1,13 @@
 FROM debian:9.5-slim
 
-LABEL "com.github.actions.name"="Hello World"
-LABEL "com.github.actions.description"="Write arguments to the standard output"
-LABEL "com.github.actions.icon"="mic"
-LABEL "com.github.actions.color"="purple"
+LABEL "com.github.actions.name"="Hello Beta-World"
+LABEL "com.github.actions.description"="Testing out my first GitHub Action"
+LABEL "com.github.actions.icon"="play-circle"
+LABEL "com.github.actions.color"="blue"
 
-LABEL "repository"="http://github.com/octocat/hello-world"
+LABEL "repository"="https://github.com/cassshh/hello-github-actions"
 LABEL "homepage"="http://github.com/actions"
-LABEL "maintainer"="Octocat <octocat@github.com>"
+LABEL "maintainer"="Cassshh <octocat@github.com>"
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
